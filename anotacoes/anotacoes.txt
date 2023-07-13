@@ -1,0 +1,286 @@
+M1 - CAP 03
+
+<a href="index.html"
+tag  = parametro = valor
+
+p{ seletor
+color : blue = declaração
+propriedade =valor
+}
+
+<!DOCTYPE html> = versão atual
+<html lang"pt-br" = portugues
+<meta charset="UTF-8" = acentuações
+
+____________________________________________________________
+M1 - CAP 04
+
+Configuracoes
+- Salvar Automaticamente
+- Word Wrap = Quebra de linha
+- WordBench = Color Theme = cor de fundo do editor
+- font size
+
+CTRL + O = Abrir
+! = Código Inicial
+Tag (h1 + Enter) = Abrir e Fechar Tags
+hr = linha horizontal
+
+M1 - CAP 05
+
+<br> = quebra de linha.
+&lt;p&gt; = simbolo para <p>
+&sum 
+&delta
+
+emojipedia.org
+U+1F604 = &#x1F604
+<!--xxx--> = comentario
+
+M1 - CAP 06
+
+mesma pasta = <img src="logo.jpg" alt="Foto Principal"
+pasta diferente = <img src="fotos/logo.jpg" alt="Foto Principal"
+internet = <img src="https://furacao...." alt="Foto Principal"
+
+Ctrl + Espaço = direcionam o que fazer dentro da TAG
+
+Você pode obter a URL completa de qualquer imagem, abra um site no Google 
+Chrome, clique com o botão direito do mouse sobre a imagem e escolha a opção 
+“Copiar endereço da imagem”. Aí é só voltar no seu código HTML, colocar o cursor do 
+teclado dentro das aspas da propriedade src da sua imagem e apertar Ctrl+V. Faça 
+u
+
+Icones para o site
+- iconArchive = formato(ICO)
+- favicon.io = transpormar imangens em icones.
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+M1 - CAP 07
+h1- h2 - h3..
+<p Loren>
+_____________________________________
+
+M1 - CAP 08
+
+CTRL + Shift + P = Wrap with Abreviation = envelopar conteudo e abrir TAG
+SHIFT TAB = deslocar frases inteiras
+ALT + Local da TAG = deleta ou escreve em todos os locais
+CRTL + Clique para criar arquivos que já estao no href
+
+<address> = endereço
+<strong> = negrito
+<em> = itaico
+<mark> = marca texto
+<big> = caiu, pois não é semantica
+<small> = texto pequeno
+<del> = texto deletado(riscado)
+<ins> = inserido(sublinhado)
+<sup> = texto encima
+<sub> = texto em embaixo
+<code>= código programação
+<pre> = texto conforme digitado
+<q>   = citação em aspas
+<blockquote> = boloco citação
+<abbr> = abreviação(ao passar o mouse encima da Abreviaçao,mostra o significado)
+______________________________________
+M1 - CAP 09 - LISTAS
+
+ordenadas = <ol type="a,1,A,i" start="d">
+<li>
+nao ordenadas = <ul type="square, disc, circle">
+
+<dl> = lista de definiçao
+<dt> = elementos de definição
+<dd> = definiçao de descrição
+_____________________________________
+M1 - CAP 10 - ANCORAS
+
+<a> = ancora
+href="www.globo.com" = atributo
+href="pag2.html" = atributo , rel="next"
+hreflang="en" = lingua do texto
+target = atributo de abertura de janelas
+_blank = nova janela
+_self = janela atual
+rel  = atributo de destino
+next = proxima parte
+prev = parte anterior
+
+download="meulivro.pdf" = baixar arquivos , type="application/pdf
+
+
+NAVEGACAO ENTRE PASTAS
+./atual
+../superior
+________________________
+M1 - CAP 11 - IMAGENS
+
+<picture>
+
+<source media="(max-width: 1050px)" = Limita o tamanho da Imagem
+srcset="fotom.png"
+type="image/jpg">
+
+<img src="fotog.jpg" alt="Imagem">  = tamanho padrão
+
+<audio preload="metadata" controls autoplay loop>
+	<source src="midia/guana.mp3" type="audio/mpeg"
+metadata = carrega alguas informações
+auto = carrega tudo.
+controls = carrega os controles de audio.
+autoplay = inicioassim  a pagina for carregada.
+loop = repetição eterna.
+source = formatos diferentes.
+
+<video width="600" poster="tumb.jpg controls autoplay>
+poster = colocar uma imagem sobrepondo o video.
+	<source src="meuvideo" type="video/mp4"
+<p>Nao foi possivel carregar o video</p>
+
+<video> youtube
+<iframe>
+
+handbrake = converter video
+
+M1 - CAP 12 - CSS
+
+inline = diretaente na TAG
+internal = dentro do head = h1{}
+external = <link rel="stylesheet" href="style.css">
+link = command + Click
+
+arquivo style.css
+@charset "UTF-8"
+/* coentario */
+___________________________
+M2 - CAP 13 - CORES
+
+Adobe Color = circulo de cores
+palleton
+colorzilla(extensao chrome) - captura cor
+
+configuraçao global
+* {
+            height: 100%;
+        }
+
+M2 - CAP 14 - FONTES
+
+Fontes Ninja = descobrir tipografia sites
+google fonts
+
+tamanho das fontes = px ou em
+em = medida em relação a fonte original(base)
+text-align = alinhamento dos textos.
+
+safe combinations = garantir opçoes de fontes para o dispositivo
+
+medidas absolutas (px)
+cm, mm, in, px, pt
+
+medidas relativas (em)
+em, ex, % 
+
+font-size = 1em
+font-weight = bold
+font-style = italic
+
+text-ident = identar inicio de paragrafo
+
+M2 - CAP 15 - ID CSS
+
+<h1 id"principal">
+h1 { h1#principal}
+id = #
+class = .
+pseudo class = :
+pseudo element = ::
+children = >
+<span> = envelopar para colocar uma classe dentro
+2 classes ou id = no mesmo elemento
+
+PSEUDO CLASS
+div
+border: 1px solid black;
+display: inline-block; = mesma linha
+
+div:hover = muda estado ao passar mouse por cima
+: = pseudo classe
+hover = mouse por cima
+
+Ocultar Texto dentro da DIV
+div > p {
+    display: none;    
+}
+
+div:hover > p{
+    display: block;
+}
+
+a:visited{
+            color: blue;
+        }
+a:active
+
+PSEUDO ELEMENTS
+a::after{
+            content: '[link]';
+            color: beige;
+        }
+
+M2 - CAP 16 - BOX LEVEL
+
+box-level (*div,h1,p,form,video,*main,nav,*section,*aside)
+quebra linha e ocupa largura total
+
+in-line-level(span,small,button,a)
+não quebra linha e ocupa largura parcial
+
+margin: auto; = centralizar conteúdo
+
+<span><div> = Tags Agrupamento
+<header>
+<nav> dentro header
+<main> conteudo principal
+<article>
+<aside>
+<footer rodapé>
+
+box-shadow:3px 5px 4px black;
+border-radius: 20px;
+border: width(10px) style(solid) color(gray)
+____________________________________________
+M2 - CAP 17 - DESAFIO 10
+
+mockflow = montar sites
+V@laski81Flow
+
+Variaveis CSS
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #831ead;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+
+Centralizar imagem
+display: block;
+    margin: auto;
+
+line-heigt = altura linha
+
+aside ul{
+    list-style-position: inside;
+}
+list-style-type: '\2714';
+
+a.externo::after{
+    content: '00A0\1F517'
+}
+________________________________________
+M3 - CAP 18 - GIT e GITHUB

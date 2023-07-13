@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Imagem Dinamica</title>
+</head>
+<body>
+    <h3>Imagem Dinamica</h3>
+    <p>Altere o tamanho do navegador para testar ajuste de imagens.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Grande">
+        <!--folga de 50px para nao ter barra de rolagem lateral-->
+    </picture>
+    <h3>Midias</h3>
+    <p>Fly Away</p>
+    <audio src="midia/fly-away.mp3" controls autoplay></audio>
+    <p>My Sacrifice</p>
+    <audio controls preload="metadata" autoplay loop>
+        <source src="midia/my-sacrifice.mp3" type="audio.mpeg">
+    </audio>
+    <h3>Videos</h3>
+    <h4>Videos Locais</h4>
+    <video src="videos/PC TOMASONI- Luiz - 192.168.0.44 - Conexão de Área de Trabalho Remota 2022-06-10 11-25-22.mp4" controls width="300px"></video>
+    <p>Segundo Video</p>
+    <video controls width="300px" autoplay loop poster="imagens/cap.png">
+        <source src="videos/PC TOMASONI- Luiz - 192.168.0.44 - Conexão de Área de Trabalho Remota 2022-06-10 11-25-22.mp4">
+    </video>
+    <h3>Videos Youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9X_ViIPA-Gc" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+            
+            
+            
+
+    
+</body>
+</html>

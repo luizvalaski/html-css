@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Pseudo</title>
+    <style>
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: aqua;
+        }
+        
+        a::after{
+            content: '[link]';
+            color: rgb(138, 138, 66);
+        }
+
+        .especial::after{
+            content: '[new]';
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Link</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.globo.com/">Globo</a></li>
+        <li><a href="https://www.bandab.com.br/">BandaB.com</a></li>
+        <li><a href="https://www.youtube.com/" class="especial">Furacao</a></li>
+        
+    </ul>
+    
+</body>
+</html>
