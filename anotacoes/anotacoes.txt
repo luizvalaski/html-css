@@ -293,4 +293,28 @@ background-size: 10px 10px;
 background-repeat: repeat-x;
 height: 70vh;
 background-position: center center;
+background-size: cover;
+background-size: contain;
+background-attachment: fixed;
+
+#container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;           
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;            
+            background-color: yellow;           
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
 
