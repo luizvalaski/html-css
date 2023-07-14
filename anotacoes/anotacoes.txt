@@ -284,3 +284,13 @@ a.externo::after{
 }
 ________________________________________
 M3 - CAP 18 - GIT e GITHUB
+
+________________________________________
+M3 - CAP 19 - IMAGEM DE FUNDO
+
+background-image: url('imagens/pattern001.png');
+background-size: 10px 10px;
+background-repeat: repeat-x;
+height: 70vh;
+background-position: center center;
+
