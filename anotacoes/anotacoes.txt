@@ -337,3 +337,10 @@ efeito paralax
 background-attachment: fixed;
 
 M3 - CAP 21 - TABELAS
+<table>
+        <table row>
+            <table header>
+            <table data> 
+<table><tr><td>
+border-collapse: collapse; 
+vertical-align: midlle;
