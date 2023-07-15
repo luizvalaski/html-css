@@ -317,4 +317,15 @@ background-attachment: fixed;
             top: 50%;
             transform: translate(-50%, -50%);
         }
+________________________________________
+M3 - CAP 20 - DESAFIO
 
+text-transform: uppercase;
+font-variant: small-caps;
+
+padding-top: 10vh;
+padding-bottom: 10vh;
+line-height: 2em;
+
+Tamanho de fonte em relaçao a Tela
+font-size: 10vw;
