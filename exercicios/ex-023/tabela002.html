@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela GRande</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(85, 84, 84);
+            width: 600px;
+            margin: auto;
+            font-size: 1.5em;
+        }
+        table{
+            border: 3px solid black;
+            background-color: rgb(214, 212, 212);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td, th{
+            border: 1px solid gray; 
+            padding: 10px;           
+        }
+
+        td{
+            text-align: left;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: brown;
+            color: white;
+        }
+
+        tfoot{
+            background-color: brown;
+            color: white;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        caption{
+            background-color: rgb(119, 25, 25);
+            color: azure;
+            vertical-align: middle;
+            height: 50px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: beige;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Impressoras Tomasoni</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerias</td>
+                <td class="num">35.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">25.000.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">12.000.000</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Habitantes</th>
+                <td class="num"><strong>210.000.000</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>

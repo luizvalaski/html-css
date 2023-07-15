@@ -344,3 +344,9 @@ M3 - CAP 21 - TABELAS
 <table><tr><td>
 border-collapse: collapse; 
 vertical-align: midlle;
+<thead><tbody></tfoot>
+
+efeito zebrado
+tbody > tr:nth-child(2n){ ou (odd) ou (even)
+            background-color: beige;
+        }
