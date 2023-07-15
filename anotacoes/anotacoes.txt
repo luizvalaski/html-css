@@ -329,3 +329,9 @@ line-height: 2em;
 
 Tamanho de fonte em relaçao a Tela
 font-size: 10vw;
+
+sombra interna
+box-shadow: inset 6px 6px 13px 0px black;
+
+efeito paralax
+background-attachment: fixed;
