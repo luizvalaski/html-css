@@ -350,3 +350,26 @@ efeito zebrado
 tbody > tr:nth-child(2n){ ou (odd) ou (even)
             background-color: beige;
         }
+_______________________________________________
+TRAVAR CABEÇALHO
+
+table{
+            
+            position: relative;
+        }
+
+thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: brown;
+
+<tr>
+            <td>A</td>
+            <td colspan="2">B</td>            
+        </tr>
+
+
+_________________________________________
+3SCHOOL 
+
+<p title="I'm a tooltip"> = arrastar mouse
