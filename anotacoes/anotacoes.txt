@@ -367,9 +367,165 @@ thead > tr > th{
             <td>A</td>
             <td colspan="2">B</td>            
         </tr>
+<colgroup>
+scope="row"
+spanrow="2"
 
+rolar tabela lateral
+#container{
+            overflow-x: auto;
+        }
 
 _________________________________________
 3SCHOOL 
 
 <p title="I'm a tooltip"> = arrastar mouse
+<p><a href="mailto:someone@example.com">Send email</a></p>
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial">,/a>
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+a:link
+a:visited
+a:active
+a:hover
+
+BookMark
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<h2 id="C4">Chapter 4</h2>
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+<p>
+<img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+</p><p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+background-attachment: fixed; 
+background-size: 100% 100%;
+background-size: cover;
+
+varios formatos para diferentes navegadores
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+border-spacing: 30px;
+border-bottom: 1px solid #ddd;
+
+<colgroup>
+  <col span="3">
+  <col span="2" style="background-color: pink">
+</colgroup>
+
+<col span="3" style="visibility: collapse">
+<ul style="list-style-type:disc;">
+
+Use the CSS property LIST float:left to display a list horizontally
+
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example">
+_____________________________________________________
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+________________________________
+<p>
+<button type="button" onclick="light(1)">LIGA</button>
+<button type="button" onclick="light(0)">DESLIGA</button>
+</p>
+
+<img id="myImagem" src="pic_bulboff.gif" width="100" height="180">
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('myImagem').src = pic;
+</script>
+
+Path	Description
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
+
+<meta http-equiv="refresh" content="30">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+___________________________________________
+CSS Frameworks
+If you want to create your layout fast, you can use a CSS framework, like W3.CSS or Bootstrap.
+
+Ever heard about W3Schools Spaces? Here you can create your website from scratch or use a template, and host it for free.
+
+* no credit card required
+__________________________________________
+CSS framework
+CSS float property
+CSS flexbox
+CSS grid
+__________________________________________
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+<img src="img_girl.jpg" style="width:100%;">
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+Text Size = "vw" unit, which means the "viewport width".
+<p style="font-size:10vw;">
+________________________________
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+______________________________
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+___________________________________
+<div style="overflow:auto">
+____________________________________________________________
+HTML Computer Code Elements
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+
