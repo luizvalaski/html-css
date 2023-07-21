@@ -375,6 +375,26 @@ rolar tabela lateral
 #container{
             overflow-x: auto;
         }
+*****************************************
+M4 - CAP 22 - IFRAMES
+
+<ul>
+        <li><a href="extras/teste001.html" target="frame">Primeira Pagina</a></li>
+        <li><a href="extras/teste002.html" target="frame">Segunda Pagina</a></li>
+        <li><a href="extras/teste003.html" target="frame">Terceira Pagina</a></li>
+</ul>
+
+<iframe id="tela" name="frame" src="extras/teste002.html">
+        <p>Infelizmente deu Ruim</p>
+    </iframe>
+
+SEGURANCA
+<iframe src="extras/teste005.html" referrerpolicy="no-referrer" sandbox="allow-forms allow-scripts" ></iframe>
+
+
+
+
+
 
 _________________________________________
 3SCHOOL 
