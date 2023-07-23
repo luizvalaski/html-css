@@ -391,8 +391,80 @@ M4 - CAP 22 - IFRAMES
 SEGURANCA
 <iframe src="extras/teste005.html" referrerpolicy="no-referrer" sandbox="allow-forms allow-scripts" ></iframe>
 
+*****************************************
+M4 - CAP 24 - FORMS
 
+<form autocomplete="off" action="cadastro.php" method="get">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="ENVIAR"></p>
+    </form>
 
+<input type="reset" value="Limpar">
+<input type="password" name="sen" id="isen">
+placeholder="Nome" 
+autocomplete="username"
+required 
+minlength="5" 
+maxlength="15" 
+size="12"
+autocomplete="on"	
+step="0.5"
+min="0" 
+max="10"
+type="time"
+type="date"
+type="month"
+pattern="^[0-9]{2}-[0-9]{5}-[0-9]{4}$">
+<fieldset>
+<legend>Contato</legend>
+<p><input type="checkbox" name="esfut" id="
+iesfut"><label for="iesfut">Futebol</label></p>
+
+<legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+<input type="file" name="foto" id="ifoto">
+<input type="range" name="sat" id="isat" min="20" max="80" value="40">
+<input type="color" name="Cor" id="icor" value="#00ff00">
+<textarea name="area" id="iarea" cols="30" rows="10"></textarea>
+<input type="text" name="prof" id="iprof" list="list">
+            <datalist id="list">
+                <option value="ADM">Administracao</option>
+                <option value="ADM">Medico</option>
+                <option value="ADM">Engenheiro</option>
+                <option value="ADM">Musico</option>
+            </datalist>
+<input type="text" name="prof" id="iprof" list="list">
+            <datalist id="list">
+                <option value="ADM">Administracao</option>
+                <option value="ADM">Medico</option>
+                <option value="ADM">Engenheiro</option>
+                <option value="ADM">Musico</option>
+            </datalist>
+
+<p>
+            <label for="inum1">Numero 01</label>
+            <input type="number" name="num1" id="inum1" required min="0" max="50"
+            oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2">Numero 02</label>
+            <input type="number" name="num2" id="inum2" required min="0" max="50"
+            oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+_______________________________________________________
+M4 - CAP 25 - QUERIES
+
+<link rel="stylesheet" href="estilo/style.css" media="all">
+<link rel="stylesheet" href="estilo/retrato.css" media="screen and(orientation:portrait)">
+<link rel="stylesheet" href="estilo/paisagem.css" media="screen and(orientation:lanscape)">
 
 
 
