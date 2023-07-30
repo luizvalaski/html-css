@@ -466,6 +466,16 @@ M4 - CAP 25 - QUERIES
 <link rel="stylesheet" href="estilo/retrato.css" media="screen and(orientation:portrait)">
 <link rel="stylesheet" href="estilo/paisagem.css" media="screen and(orientation:lanscape)">
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url('../imagens/back-tablet.jpg');        
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
 
 
 _________________________________________
@@ -621,3 +631,306 @@ HTML Computer Code Elements
 <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
 <p><samp>File not found.<br>Press F1 to continue</samp></p>
 
+===========================CSS============
+
+margin-left: inherit; herança do elemento acima
+width: 300px;
+padding: 25px;
+box-sizing: border-box;
+box-shadow: 5px 5px 5pc green;
+letter-spacing: 7px;
+text-indent: 50px;
+text-align
+text-align-last
+vertical-align = text-top;text-bottom; sub;sup
+text-transform: uppercase;
+text-transform: capitalize;
+line-height: 1.8;
+word-spacing: 10px;
+
+Arial (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+font-variant: normal;
+font-variant: small-caps; caixa alta menor
+body {
+  font-size: 100%; solucao
+}
+h1 {
+  font-size: 2.5em;
+}
+
+**********************
+DYSPLAY
+display: none; block, inline
+visibility:hidden; ocupa espaço na tela
+
+The position Property
+static
+relative
+fixed
+absolute
+sticky - rolagem ate um determinado ponto
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+
+The z-index property specifies the stack order of an element.
+img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+z-index - soreposiçao de elementos
+
+Note: The overflow property only works for 
+block elements with a specified height.
+visible - nao esconder texto excedente
+hidden - esconder texto excedente
+scroll - esconder texto excedente e scroll
+auto - esconder texto excedente e scroll se necessario
+
+overflow-x: hidden; /* Hide horizontal scrollbar */
+overflow-y: scroll; /* Add vertical scrollbar */
+
+float: right
+float: none 
+inherit 
+clear:right; - limpar elemento q nao queira estar no float
+The clearfix Hack
+img =>float: right; +  div => "overflow: auto;"
+
+h2 style="clear:right"
+div class="clearfix"
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+
+* {
+  box-sizing: border-box;
+}
+
+display: flex;
+  flex-wrap: nowrap;
+Equal Height Boxes
+
+display: inline, display: inline-block and display: block:
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+float: right;
+position: absolute;
+right: 0px;
+
+Center Vertically - Using padding
+padding: 70px 0;
+line-height: 200px;
+height: 300px;
+------
+.center {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+display: flex;
+  justify-content: center;
+  align-items: center;
+
+CSS Combinators
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+Pseudo-Class
+a:hover
+a:active
+:first-child
+input:focus {
+  background-color: yellow;
+input[type=text]:disabled
+input:in-range {border: 2px solid yellow;}
+input:invalid <input type="email" value="supportEmail">
+p:nth-last-child(3)
+
+Pseudo-Elements
+p::first-line{}
+p::first-letter
+p.intro::first-letter 
+h1::before {content: url(smiley.gif);}
+h1::after
+::marker {color: red;font-size: 23px;}
+::selection {color: red;background: yellow;}
+
+img {opacity: 0.5;}
+img:hover {opacity: 1.0;}
+<div style="opacity:0.1;"><p>10% opacity</p></div>
+background: rgba(76, 175, 80, 0.6);
+
+li a {display: block;} = area clicavel
+ul {overflow: hidden; position: sticky;top: 0}
+
+a[target] {background-color: yellow;}
+a[target="_blank"] {background-color: yellow;}
+[title~="flower"] {border: 5px solid yellow;} = seleciona identico
+[class|="top"] {background: yellow;} = uma parte
+[class^="top"] {background: yellow;} = qualquer parte
+[class$="test"] {background: yellow;} = parte final
+[class*="te"] {background: yellow;}
+input[type="button"] {
+box-sizing property to border-box = excluir padding e bordas
+outline: none; = input[type=text]:focus {background-color: lightblue;}
+input[type=text]:focus {width: 100%;}
+_______________________________________
+body {counter-reset: section;} = 
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+_____________________________________________________
+.column {float: left;}
+row::after {content: "";display: table; clear: both;}
+
+Specificity Hierarchy
+Inline styles
+IDs
+Classes, pseudo-classes, attribute selectors
+Elements and pseudo-elements
+
+p {background-color: red !important;
+width: calc(100% - 100px);
+width: max(50%, 300px);
+
+background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: left bottom, left bottom;
+  background-repeat: no-repeat, repeat;
+
+background-size: contain;
+background-size: cover;
+
+background: url(img_man.jpg) no-repeat center fixed; 
+  background-size: cover;
+
+background-origin: background-clip 
+border-box 
+padding-box
+content-box
+
+background-color: transparent; rgba(0,0,0,0)
+color: red; border: 10px solid currentcolor;
+
+body {color: purple;}
+div { background-color: currentcolor;}
+border: inherit;
+
+CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes
+text-overflow: clip;
+text-overflow: ellipsis;
+overflow: hidden;
+word-wrap: break-word; = quebrar linha
+word-break: keep-all;
+word-break: break-all;
+writing-mode: vertical-rl
+
+CSS 2D Transforms Methods
+transform: translate(50px, 100px)
+transform: rotate(20deg);
+div:hover{transform: scale(1.1,1.1);}
+transform: scaleX(2);
+skewX()
+skewY()
+skew()
+matrix()
+
+animation: mymove 5s infinite;
+transition: width 0.1s;
+transition-delay: 1s;
+transition-duration
+transition-property
+transition-timing-function
+transition: width 2s, height 2s, transform 2s;
+transform: rotate(720deg);
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+animation-iteration-count: 3;
+animation-direction: alternate; 
+
+img {max-width: 100%;height: auto;}
+img {display: block; margin-left: auto;  margin-right: auto;}
+
+object-fit: cover;
+object-position: 40% 100%;
+.mask1 {
+  -webkit-mask-image: url(w3logo.png);
+  mask-image: url(w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.disabled {opacity: 0.6;cursor: not-allowed;} desabilitar botao
+position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);
+
+Multiple Columns
+.newspaper {column-count: 2;}
+column-gap: 10px;
+column-rule-style: solid;
+column-rule-width: 5px;
+column-rule-color: lightblue;
+column-rule: 1px solid lightblue;
+column-width: 150px;
+
+:root {--1: #1e90ff;--2: #ffffff; }
+background-color: var(--1);
+
+box-sizing: border-box; = envole todo o conteudo do elemento
+
+display: flex;
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+flex-wrap: wrap;
+flex-flow: row wrap;
+justify-content: center;
+justify-content: flex-end;
+align-items: baseline;
+justify-content: center;  align-items: center; = centralizar conteudo
+
+<div style="flex-grow: 1">1</div>
+<div style="align-self: center">3</div>
+<div style="align-self: flex-start">2</div>
+<div style="align-self: flex-end">3</div>
+
+display: flex;  flex-direction: row;
